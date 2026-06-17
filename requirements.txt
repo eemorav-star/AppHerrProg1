@@ -1,25 +1,2 @@
-2. **Su código principal:** Asegúrense de que el archivo se llame `PrototipoDepromedios.py`.
-
----
-
-### Paso 2: Subir el proyecto a GitHub
-1. Entren a su cuenta de **GitHub** y hagan clic en **"New"** (Nuevo repositorio).
-2. Pónganle un nombre al repositorio (por ejemplo: `sistema-meduca`).
-3. Asegúrense de dejarlo en modo **Public** (Público) para que Streamlit Cloud pueda leerlo.
-4. Marquen la casilla "Add a README file" y hagan clic en **"Create repository"**.
-5. En la pantalla que aparece, hagan clic en **"Add file"** $\rightarrow$ **"Upload files"**.
-6. Arastren y suelten sus dos archivos (`PrototipoDepromedios.py` y `requirements.txt`) y hagan clic en **"Commit changes"** para guardarlos.
-
----
-
-### Paso 3: Conectar y desplegar en Streamlit Cloud
-1. Entren a [share.streamlit.io](https://share.streamlit.io) e inicien sesión con su cuenta de GitHub.
-2. Hagan clic en el botón azul de la esquina superior derecha que dice **"Create app"**.
-3. En la pantalla de configuración, completen estos tres campos simples:
-   * **Repository:** Busquen y seleccionen el repositorio que acaban de crear en GitHub (`tu-usuario/sistema-meduca`).
-   * **Branch:** Déjenlo en `main` o `master` (la que aparezca por defecto).
-   * **Main file path:** Escriban el nombre exacto de su archivo principal: `PrototipoDepromedios.py`.
-4. En el campo **URL**, pueden personalizar el enlace de su aplicación si lo desean.
-5. Hagan clic en el botón **"Deploy!"** (Desplegar).
-
-¡Listo! Verán una animación de unos globos mientras Streamlit prepara el servidor. En un par de minutos, la aplicación estará en línea y les dará el enlace web oficial para que se lo envíen a la profesora Esther Sánchez.
+streamlit
+pandas
