@@ -100,17 +100,17 @@ cantidad_trimestres = st.selectbox("¿Cuántos trimestres desea considerar?", [1
 notas = []
 
 # Primer trimestre
-primer_trimestre = st.number_input("Nota del Primer Trimestre",min_value=0.0,max_value=5.0,step=0.1)
+primer_trimestre = st.number_input("Nota del Primer Trimestre",min_value=1.0,max_value=5.0,step=0.1)
 notas.append(primer_trimestre)
 
 # Segundo trimestre (solo si aplica)
 if cantidad_trimestres >= 2:
-    segundo_trimestre = st.number_input("Nota del Segundo Trimestre",min_value=0.0,max_value=5.0,step=0.1)
+    segundo_trimestre = st.number_input("Nota del Segundo Trimestre",min_value=1.0,max_value=5.0,step=0.1)
     notas.append(segundo_trimestre)
 
 # Tercer trimestre (solo si aplica)
 if cantidad_trimestres == 3:
-    tercer_trimestre = st.number_input("Nota del Tercer Trimestre",min_value=0.0, max_value=5.0,step=0.1 )
+    tercer_trimestre = st.number_input("Nota del Tercer Trimestre",min_value=1.0, max_value=5.0,step=0.1 )
     notas.append(tercer_trimestre)
 
  # oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOOO
@@ -118,7 +118,7 @@ if cantidad_trimestres == 3:
  # oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
 
 
-# Botón para calcular
+# algoritmo de Botón para calcular
 if st.button("Calcular Promedio Acumulado"):
 
     promedio_anual = sum(notas) / len(notas)
@@ -132,6 +132,6 @@ if st.button("Calcular Promedio Acumulado"):
     
 
     if promedio_anual >= 3.0:
-        st.success("✅ Que bueno sigue asi mejorando.")
+        st.success("✅ Qué bueno, sigue así mejorando.")
     else:
-        st.error(" Estás reprobando la asignatura, tu acudiente dbe hablar con el docente." )
+        st.error(" Estás reprobando la asignatura; tu acudiente debe hablar con el docente." )
