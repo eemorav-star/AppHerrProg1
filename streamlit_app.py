@@ -3,14 +3,10 @@ import streamlit as st
 st.set_page_config(page_title="App de Promedios", page_icon="👍")
 
 # ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-# PROYECTO : Calcula pormedios en el sistema de educativo de Panama 
+# PROYECTO : Calcula pormedios en el sistema  educativo de Panamá 
 # Creadores del proyecto: Adrian Luna , Kathia Jaen, Elpidio Mora
 # ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
-# Varables de de los trimestres anteriores
-PrimerTrimestre = 0.0
-SegundoTrimestre = 0.0
-TercerTrimestre = 0.0
 
 i = 0
 j = 0
@@ -62,7 +58,7 @@ examenFinal = st.number_input("Ingrese la nota del examen Trimestral final", min
 promediofinal = (promedioParciales + promedioAp + examenFinal) / 3
 
  # ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
- #  SALIDA 1 Calula notas parciales, notas de apreciación y examen final para obtener el promedio final del año escolar
+ #  SALIDA 1 Calcula notas parciales, notas de apreciación y examen final para obtener el promedio final del año escolar
  # ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 # Botón para calcular
 if st.button("Calcular Promedio de todas las notas"):
@@ -87,6 +83,11 @@ if st.button("Calcular Promedio de todas las notas"):
  # oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOOO
  #  Entrada 2 Calcula la nota final del año escolar incluyendo las notas de los trimestres anteriores
  # oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
+# Variables de los trimestres anteriores
+PrimerTrimestre = 0.0
+SegundoTrimestre = 0.0
+TercerTrimestre = 0.0
 
 st.title("¿Desea incluir notas de los trimestres anteriores?")
 
@@ -119,7 +120,7 @@ if cantidad_trimestres == 3:
 
 
 # algoritmo de Botón para calcular
-if st.button("Calcular Promedio Acumulado"):
+if st.button("Calcular Promedio Final del año escolar"):
 
     promedio_anual = sum(notas) / len(notas)
 
@@ -132,6 +133,6 @@ if st.button("Calcular Promedio Acumulado"):
     
 
     if promedio_anual >= 3.0:
-        st.success("✅ Qué bueno, sigue así mejorando.")
+        st.success("✅ Qué bueno,excelente, vas bien.")
     else:
         st.error(" Estás reprobando la asignatura; tu acudiente debe hablar con el docente." )
