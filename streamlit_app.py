@@ -4,7 +4,7 @@ st.set_page_config(page_title="App de Promedios", page_icon="👍")
 
 # ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 # PROYECTO : Calcula pormedios en el sistema  educativo de Panamá 
-# Creadores del proyecto: Adrian Luna , Kathia Jaen, Elpidio Mora
+# Creadores del proyecto: Adrian Luna , Kathya Jaen, Elpidio Mora, Cristela Jaen
 # ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
 
